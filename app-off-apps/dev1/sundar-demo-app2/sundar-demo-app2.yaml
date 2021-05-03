@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argocd
+  namespace: argocd
+spec:
+  # The project the application belongs to.
+  project: default
+  # Source of the application manifests
+  source:
+    repoURL: https://github.com/alaghusundhar/sundar-argocd.git
+    targetRevision: master
+    path: overlays/qa2
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
+  syncPolicy:
+   automated:
+     selfHeal: true
+     prune: true
