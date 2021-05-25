@@ -11,4 +11,4 @@ spec:
     path: production/
     repoURL: https://github.com/alaghusundhar/sundar-jenkins.git
     targetRevision: HEAD
-  project: jenkins
+  project: default
