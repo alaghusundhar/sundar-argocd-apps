@@ -6,9 +6,9 @@ metadata:
 spec:
   destination:
     namespace: jenkins
-    server: https://kubernetes.default.svc
+    server: 'https://kubernetes.default.svc'
   source:
     path: production/
-    repoURL: https://github.com/alaghusundhar/sundar-jenkins.git
+    repoURL: 'https://github.com/alaghusundhar/sundar-jenkins.git'
     targetRevision: HEAD
   project: default
