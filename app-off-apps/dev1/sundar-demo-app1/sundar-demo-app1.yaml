@@ -8,7 +8,7 @@ spec:
     namespace: sundar-demo-app-dev1
     server: 'https://kubernetes.default.svc'
   source:
-    path: production/
+    path: prod/
     repoURL: 'https://github.com/alaghusundhar/sundar-k8s-demo-prod.git'
     targetRevision: main
   project: sundar-demo-app1
