@@ -10,5 +10,5 @@ spec:
   source:
     path: production/
     repoURL: 'https://github.com/alaghusundhar/sundar-k8s-demo-prod.git'
-    targetRevision: HEAD
+    targetRevision: main
   project: sundar-demo-app1
